@@ -67,6 +67,23 @@ namespace MyDatabase.Seeding
             db.Tigers.Add(t4);
             db.Tigers.Add(t5);
             db.SaveChanges();
+
+
+            Horse h1 = new Horse() { Name = "Panos" };
+            Horse h2 = new Horse() { Name = "Vagos" };
+            Horse h3 = new Horse() { Name = "Nikos" };
+            Horse h4 = new Horse() { Name = "Magas" };
+            Horse h5 = new Horse() { Name = "Alani" };
+
+            db.Horses.Add(h1);
+            db.Horses.Add(h2);
+            db.Horses.Add(h3);
+            db.Horses.Add(h4);
+            db.Horses.Add(h5);
+            db.SaveChanges();
+
+
+
         }
     }
 }
