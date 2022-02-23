@@ -28,5 +28,6 @@ namespace MyDatabase
         public DbSet<Project> Projects { get; set; }
         public DbSet<Tiger> Tigers { get; set; }
         public DbSet<Horse> Horses { get; set; }
+        public DbSet<Penguin> Penguins { get; set; }
     }
 }

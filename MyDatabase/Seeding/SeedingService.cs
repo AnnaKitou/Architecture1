@@ -82,7 +82,17 @@ namespace MyDatabase.Seeding
             db.Horses.Add(h5);
             db.SaveChanges();
 
+            Penguin p1 = new Penguin() { Name = "Oz" };
+            Penguin p2 = new Penguin() { Name = "Lady" };
+            Penguin p3 = new Penguin() { Name = "Lois" };
+            Penguin p4 = new Penguin() { Name = "Peach" };
+            Penguin p5 = new Penguin() { Name = "Bruce" };
 
+            db.Penguins.Add(p1);
+            db.Penguins.Add(p2);
+            db.Penguins.Add(p3);
+            db.Penguins.Add(p4);
+            db.Penguins.Add(p5);
 
         }
     }
