@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal\Cat.cs" />
     <Compile Include="Animal\Dog.cs" />
     <Compile Include="Animal\Horse.cs" />
     <Compile Include="Animal\Tiger.cs" />
