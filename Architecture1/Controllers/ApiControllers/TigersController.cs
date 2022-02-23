@@ -20,23 +20,24 @@ namespace Architecture1.Controllers.ApiControllers
         private ApplicationDbContext db;
         private GenericRepository<Tiger> genericService;
 
-        public TigersController(ApplicationDbContext db, GenericRepository<Tiger> genericService)
+        public TigersController()
         {
             db=new ApplicationDbContext();
             genericService =  new GenericRepository<Tiger> (db);
         }
 
         // GET: api/Tigers
-        public IQueryable<Tiger> GetTigers()
+        public IHttpActionResult GetTigers()
         {
-            return db.Tigers;
+            var tigers = genericService.GetAll();
+            return Json(tigers);
         }
 
         // GET: api/Tigers/5
         [ResponseType(typeof(Tiger))]
         public IHttpActionResult GetTiger(int id)
         {
-            Tiger tiger = db.Tigers.Find(id);
+            Tiger tiger = genericService.Get(id);
             if (tiger == null)
             {
                 return NotFound();
