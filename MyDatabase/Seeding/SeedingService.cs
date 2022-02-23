@@ -1,4 +1,5 @@
-﻿using Entities.School;
+﻿using Entities.Animal;
+using Entities.School;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +51,21 @@ namespace MyDatabase.Seeding
             db.Students.Add(s4);
             db.Students.Add(s5);
 
+            db.SaveChanges();
+        }
+        public void SeedAnimal()
+        {
+            Tiger t1 = new Tiger() { TigerName = "Maria" };
+            Tiger t2 = new Tiger() { TigerName = "Lion" };
+            Tiger t3 = new Tiger() { TigerName = "Catan" };
+            Tiger t4 = new Tiger() { TigerName = "Chitara" };
+            Tiger t5 = new Tiger() { TigerName = "Milka" };
+
+            db.Tigers.Add(t1);
+            db.Tigers.Add(t2);
+            db.Tigers.Add(t3);
+            db.Tigers.Add(t4);
+            db.Tigers.Add(t5);
             db.SaveChanges();
         }
     }

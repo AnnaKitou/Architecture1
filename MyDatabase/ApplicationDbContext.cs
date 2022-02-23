@@ -1,4 +1,5 @@
-﻿using Entities.IdentityUsers;
+﻿using Entities.Animal;
+using Entities.IdentityUsers;
 using Entities.School;
 using Microsoft.AspNet.Identity.EntityFramework;
 using MyDatabase.Initializers;
@@ -25,5 +26,6 @@ namespace MyDatabase
         }
         public DbSet<Student> Students { get; set; }
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Tiger> Tigers { get; set; }
     }
 }

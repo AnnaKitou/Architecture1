@@ -15,7 +15,7 @@ namespace MyDatabase.Initializers
 
             SeedingService service=new SeedingService(context);
             service.SeedStudent();
-
+            service.SeedAnimal();
 
             base.Seed(context);
         }
