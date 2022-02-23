@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal\Dog.cs" />
     <Compile Include="Animal\Tiger.cs" />
     <Compile Include="CustomValidation\MyValidationMethods.cs" />
     <Compile Include="IdentityUsers\ApplicationUser.cs" />
